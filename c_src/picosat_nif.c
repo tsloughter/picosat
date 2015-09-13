@@ -46,7 +46,6 @@ static ERL_NIF_TERM solve_nif(ErlNifEnv* env, int argc, const ERL_NIF_TERM argv[
     return enif_make_atom(env, "unknown");
   } else if (res == PICOSAT_SATISFIABLE) {
     unsigned int vars = picosat_variables(sat);
-    printf("%d\n", vars);
     ERL_NIF_TERM solution[vars];
     for(int i=1;i<=vars;i++) {
       solution[i-1] = enif_make_int(env, i * picosat_deref(sat, i));
