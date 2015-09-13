@@ -1,7 +1,7 @@
-Erlang Picosat
+Erlang PicoSAT
 =====
 
-Based on [Haskell's picosat bindings](https://github.com/sdiehl/haskell-picosat).
+Based on [Haskell's PicoSAT bindings](https://github.com/sdiehl/haskell-picosat).
 
 Build
 -----
